@@ -67,15 +67,15 @@ print(length)
 
 ### [Data Types;](https://www.w3schools.com/python/python_datatypes.asp) Strings, Boolean, Integers, Float. #Data Types
 
-Strings: Anything within single, double or triple quotes will be treated as a string.
+* Strings: Anything within single, double or triple quotes will be treated as a string.
 
-Integers: Whole numbers without decimal places.
+* Integers: Whole numbers without decimal places.
 
-Float: Floating Point Number. Number with a decimal place such as Pi 3.14159.
+* Float: Floating Point Number. Number with a decimal place such as Pi 3.14159.
 
-Boolean: True or False.
+* Boolean: True or False.
 
-Type: Use to check the data type you're working with
+* Type: Use to check the data type you're working with
 ``` python
 a = str(123)
 print(type(a))
@@ -104,3 +104,63 @@ print(two_digit_number)
 b = list(two_digit_number)
 print(int(b[0])+int(b[1]))
 ```
+### Mathematical Operations in Python
+
+* Addition (+)
+* Subtraction (-) 
+* Multiplicattion (*)
+* Division (/) - Always results in a float data type
+* Exponent represented by double * i.e. 2^2 = 2**2
+* Follows PEMDAS with slightly varied prioritization of order of operations
+  - Parentheses
+  - Exponents
+  - Multiplication and Division are weighted under same priority and evaluated form left to right order
+  - Addition and Subtraction are also weighted under same priority and evaluated from left to right.
+  - You can use Paretheses to change/elevate the Mathematical Operation order.
+``` python
+print (3 * 3 / 3 + 3 - 3)
+#Checked for parentheses, none
+#Checked for Exponents, None
+#Then read left to right likee: 3 * 3 = 9, 3 / 3 = 1
+#Left with 10 + 3 - 3, read left to right so answer is 7
+```
+### Day 2 Challenge - Write a BMI Calculator
+``` python
+#Don't change the code below
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+#Don't change the code above
+
+#Write your code below this line
+height = float(height)
+weight = int(weight)
+BMI = int(weight / (height**2))
+print(BMI)
+```
+### Number Manipulation and F Strings in Python 
+
+* Round function is used to round float numbers
+  - Example:
+  ``` python
+  print (round(8 / 3))
+  #Also can set the decimal plact to round by specifying place with , [insert_integer]
+  print (round(8 / 3, 2))
+  #This will round to the second decimal place
+  ```
+* Floor Division: using // rather than /. Cuts off any additional digits, changes data type to Integer number
+  - Note: Division using / results in Float number
+* When calling a value again, can manipulate present value off of previuous value using +=.-=. etc.
+  ``` python
+  score = 0
+  #if you want to add 1 to the score value based off previous value write this
+  score += 1
+  #same goes for subtracting
+  score -= 1
+  ```
+* F Strings: Rather than converting a bunch of different data types i prefix f string before the string.
+    ``` python
+    score = 0
+    height = 1.5
+    isWinning = True
+    print(f"your score is {score, youre height is {height}, you are winning is {isWinning}")
+    ```
