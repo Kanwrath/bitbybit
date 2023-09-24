@@ -88,7 +88,7 @@ print(70 + float("100.5"))
 ```
 This will change the Integer 70 and print out the float value to 170.5
 
-### Day 2 Challenge - Write a program that adds the digits in a 2 digit number.
+### Day 2 Exercise - Write a program that adds the digits in a 2 digit number.
 ```python
 
 two_digit_number = input("Type a two digit number: ")
@@ -124,7 +124,7 @@ print (3 * 3 / 3 + 3 - 3)
 #Then read left to right likee: 3 * 3 = 9, 3 / 3 = 1
 #Left with 10 + 3 - 3, read left to right so answer is 7
 ```
-### Day 2 Challenge - Write a BMI Calculator
+### Day 2 Exercise - Write a BMI Calculator
 ``` python
 #Don't change the code below
 height = input("enter your height in m: ")
@@ -164,3 +164,33 @@ print(BMI)
     isWinning = True
     print(f"your score is {score, youre height is {height}, you are winning is {isWinning}")
     ```
+### Day 2 Exercise - Create a program using maths and f-Strings that tells us how many days, weeks, months we have left if we live until 90 years old.
+``` python
+#Don't change the code below
+age = input("What is your current age? ")
+#Don't change the code above
+
+#Write your code below this line
+age = int(age)
+daysLeft = ((90 * 365) - (age * 365))
+weeksLeft =((90 * 52) - (age * 52))
+monthsLeft = ((90 * 12) - (age * 12))
+print(f"You have {daysLeft} days, {weeksLeft} weeks, and {monthsLeft} months left.")
+```
+### Day 2 Coding Challenge - Tip Calculator
+
+``` python
+#Tip Calculator
+#Inputs - If the bill was $150.00, split between 5 people, with 12% tip. 
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Format the result to 2 decimal places = 33.60
+#Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.
+
+#Write your code below this line
+bill_total = input("What is the total amount of the bill? " )
+total_people = input("How many people is this amount split between? ")
+bill_total = float(bill_total)
+total_people = float(total_people)
+amountPaid = round((bill_total / total_people) * 1.12, 2)
+print(format(amountPaid, ".2f"))
+```
