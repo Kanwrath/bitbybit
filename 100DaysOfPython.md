@@ -63,3 +63,44 @@ print(length)
     pet_name = input("What is the name of a pet that you have had in your life?\n ")
     print("This is the name of your band! The "+ city_name + " " + pet_name + "'s")
 ```
+##  Day 2 - Understanding Data Types and How to Manipulate Strings
+
+### [Data Types;](https://www.w3schools.com/python/python_datatypes.asp) Strings, Boolean, Integers, Float. #Data Types
+
+Strings: Anything within single, double or triple quotes will be treated as a string.
+
+Integers: Whole numbers without decimal places.
+
+Float: Floating Point Number. Number with a decimal place such as Pi 3.14159.
+
+Boolean: True or False.
+
+Type: Use to check the data type you're working with
+``` python
+a = str(123)
+print(type(a))
+```
+This will print <class 'str'>
+
+Type Conversion / Casting: Change/convert the data type you're working with
+``` python
+print(70 + float("100.5"))
+```
+This will change the Integer 70 and print out the float value to 170.5
+
+### Day 2 Challenge - Write a program that adds the digits in a 2 digit number.
+```python
+
+two_digit_number = input("Type a two digit number: ")
+
+#Write your code below this line
+#print(type(two_digit_number)) - check type
+#segment out the input to separate digits with index
+f_d = int(two_digit_number[0])
+s_d = int(two_digit_number[1])
+two_digit_number = f_d + s_d
+print(two_digit_number)
+#or change input to list, then call int to change type and define index place for digits 
+b = list(two_digit_number)
+print(int(b[0])+int(b[1]))
+```
