@@ -187,10 +187,11 @@ print(f"You have {daysLeft} days, {weeksLeft} weeks, and {monthsLeft} months lef
 #Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.
 
 #Write your code below this line
-bill_total = input("What is the total amount of the bill? " )
-total_people = input("How many people is this amount split between? ")
-bill_total = float(bill_total)
-total_people = float(total_people)
-amountPaid = round((bill_total / total_people) * 1.12, 2)
-print(format(amountPaid, ".2f"))
+bill_total = float(input("What is the total amount of the bill? " ))
+total_people = int(input("How many people is this amount split between? "))
+bill_tip = int(input("How much tip % would you like to give? 10, 12, 15, or 20? "))
+tip_as_percent = bill_tip / 100 + 1
+amount_owed = round((bill_total / total_people) * tip_as_percent, 2)
+amount_owed = format(amount_owed, ".2f")
+print(f"Each person should pay: ${amount_owed}")
 ```
