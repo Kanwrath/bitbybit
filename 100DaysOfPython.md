@@ -195,3 +195,4 @@ amount_owed = round((bill_total / total_people) * tip_as_percent, 2)
 amount_owed = format(amount_owed, ".2f")
 print(f"Each person should pay: ${amount_owed}")
 ```
+## Day 3 - Conditional Statements, Logical Operators, Code Blocks and Scope
