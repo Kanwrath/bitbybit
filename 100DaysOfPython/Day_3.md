@@ -214,3 +214,11 @@ if extra_cheese == "Y":
 
 print (f"Your final bill is: ${price}")
 ```
+### Day 3 - Logical Operators
+
+* And
+  - Logical AND: True if both the operands are true
+* Or
+  - Logical OR: True if either of the operands is true
+* Not
+  - Logical NOT: True if operand is false
