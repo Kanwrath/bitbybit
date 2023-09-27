@@ -88,3 +88,31 @@ elif BMI < 35:
 else:
     print(f"Your BMI is {BMI}, you are clinically obese")
 ```
+### Day 2 - Coding Challenege - Write a program that works out whether if a given year is a leap year
+
+* Conditions for leap year
+  - on every year that is evenly divisible by 4 
+
+  - **except** every year that is evenly divisible by 100 
+
+  - **unless** the year is also evenly divisible by 400
+ 
+  Use nested if statements as noted below
+
+  ``` python
+  #Don't change the code below
+  year = int(input("Which year do you want to check? "))
+  #Don't change the code above
+
+  #Write your code below this line
+  if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("Leap year")
+        else:
+            print("Not leap year")
+    else:
+        print("Leap year")
+  else:
+    print("Not leap year")
+  ```
