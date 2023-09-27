@@ -134,3 +134,83 @@ and do this
 if condition
 and do this
 ```
+### Longer example of code block using all the Operators from this module
+``` python
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+bill = 0
+
+if height >= 120:
+  print("You are tall enough to ride roller     coaster.\n Enjoy the Ride!")
+  age = int(input("What is your age? "))
+  if age < 12:
+    bill = 5
+    print("Please pay $5.")
+  elif age <= 18: 
+    bill = 7
+    print("Please pay $7.")
+  else:
+    bill = 12
+    print("Please pay $12.")
+    
+  wants_photo = input("Do you wantr a photo taken? Y or N")
+  if wants_photo == "Y"
+  #Add $3 to the bill
+  bill = bill + 3
+  #or write bill += 3. This is short hand for adding value to most recently held value of the variable. 
+
+print(f"Your final bill is ${bill}")
+else:
+  print(" Sorry you need to grow a little more before riding the rollercoaster.\n Please come back in a few years!")
+```
+
+### Day 3 challenge - Build an automatic pizza order program.
+
+Parameters:
+Based on a user's order, work out their final bill.
+
+* Small Pizza: $15
+
+* Medium Pizza: $20
+
+* Large Pizza: $25
+
+* Pepperoni for Small Pizza: +$2
+
+* Pepperoni for Medium or Large Pizza: +$3
+
+* Extra cheese for any size pizza: + $1
+
+``` python
+#Don't change the code below
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+#Don't change the code above
+
+#Write your code below this line
+#Define price variable for if statements to reference
+price = 0
+
+#Nested if statements
+if size == "S":
+ price += 15
+elif size == "M":
+ price += 20
+#if user does not pick S or M then it will be L so use Else statement for this
+else:
+ price += 25
+#if the user adds pepperoni to small pizza add $3
+if add_pepperoni == "Y":
+ if size == "S":
+  price += 2
+ #The addiitonal cost for pepperoni is the same for M & L so use else statement
+ else:
+    price += 3
+#The cost for extra cheese is the same for all pizza sizes so use on if statement to ad $1 to the total
+if extra_cheese == "Y":
+    price += 1
+
+print (f"Your final bill is: ${price}")
+```
