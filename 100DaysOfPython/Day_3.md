@@ -116,3 +116,21 @@ else:
   else:
     print("Not leap year")
   ```
+### Multiple if conditions
+as opposed to if/elif/else where only one of the items will happen, when using if/if/if all conditions will be executed
+``` python
+if condition:
+  elif another condition:
+     do this
+else:
+  do this
+#
+#VS
+#
+if condition
+do this
+if condition
+and do this
+if condition
+and do this
+```
