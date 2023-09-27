@@ -10,3 +10,59 @@ if height > 120:
 else:
   print(" Sorry you need to grow a little more before riding the rollercoaster.\n Please come back in a few years!")
 ```
+* Comparison Operators
+    - ">:" Greater than
+    - "<:" Less than
+    - ">=" Greater than or equal to
+    - "<=" Less than or equal to
+    - "==" Check if value equals assigned value
+
+### Day 2 - Coding Challenege - Write a program that works out whether if a given number is an odd or even number.
+
+* Modulo Operation - %
+    - Gives you the remainder after division is complete
+ 
+``` python
+#Don't change the code below
+number = int(input("Which number do you want to check? "))
+#Don't change the code above
+if number % 2 == 0:
+    print("This is an even number.")
+else: 
+    print("This is an odd number.")
+```
+### Nested if statements and elif statements
+* Computer reads the first if condition and if it is true goes to end otherwise it goes to the nested statement. 
+``` python
+if condition:
+  elif another condition:
+     do this
+else:
+  do this
+```
+``` python
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+
+if height >= 120:
+  print("You are tall enough to ride roller     coaster.\n Enjoy the Ride!")
+  age = int(input("What is your age? "))
+  if age < 12:
+    print("Please pay $5.")
+  elif age <= 18: 
+    print("Please pay $7.")
+  else:
+    print("Please pay $12.")
+else:
+  print(" Sorry you need to grow a little more before riding the rollercoaster.\n Please come back in a few years!")
+```
+### Day 2 - Coding Challenege - BMI 2.0. 
+### Write a program that interprets the Body Mass Index (BMI) based on a user's weight and height.
+
+It should tell them the interpretation of their BMI based on the BMI value.
+
+* Under 18.5 they are underweight
+* Over 18.5 but below 25 they have a normal weight
+* Over 25 but below 30 they are slightly overweight
+* Over 30 but below 35 they are obese
+* Above 35 they are clinically obese.
