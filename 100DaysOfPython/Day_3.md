@@ -11,8 +11,8 @@ else:
   print(" Sorry you need to grow a little more before riding the rollercoaster.\n Please come back in a few years!")
 ```
 * Comparison Operators
-    - ">:" Greater than
-    - "<:" Less than
+    - ">" Greater than
+    - "<" Less than
     - ">=" Greater than or equal to
     - "<=" Less than or equal to
     - "==" Check if value equals assigned value
