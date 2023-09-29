@@ -222,3 +222,35 @@ print (f"Your final bill is: ${price}")
   - Logical OR: True if either of the operands is true
 * Not
   - Logical NOT: True if operand is false
+ 
+Added an elif block for ages between 45 - 55 below
+``` python
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+bill = 0
+
+if height >= 120:
+  print("You are tall enough to ride roller     coaster.\n Enjoy the Ride!")
+  age = int(input("What is your age? "))
+  if age < 12:
+    bill = 5
+    print("Please pay $5.")
+  elif age <= 18: 
+    bill = 7
+    print("Please pay $7.")
+  elif age >= 45 and age <= 55
+    print ("Everything is going to be ok. Have a free ride on us!")
+  else:
+    bill = 12
+    print("Please pay $12.")
+    
+  wants_photo = input("Do you wantr a photo taken? Y or N")
+  if wants_photo == "Y"
+  #Add $3 to the bill
+  bill = bill + 3
+  #or write bill += 3. This is short hand for adding value to most recently held value of the variable. 
+
+print(f"Your final bill is ${bill}")
+else:
+  print(" Sorry you need to grow a little more before riding the rollercoaster.\n Please come back in a few years!")
+```
