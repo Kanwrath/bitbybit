@@ -308,3 +308,68 @@ elif (lovescore >= 40) and (lovescore <= 50):
 else:
     print(f"Your score is {lovescore}")
 ```
+### Day 3 challenge - Treasure Island(Chose-you-own-adventure)
+
+``` python
+print('''
+ ____________________________________________________________________
+ / \-----     ---------  -----------     -------------- ------    ----\
+ \_/__________________________________________________________________/
+ |~ ~~ ~~~ ~ ~ ~~~ ~ _____.----------._ ~~~  ~~~~ ~~   ~~  ~~~~~ ~~~~|
+ |  _   ~~ ~~ __,---'_       "         `. ~~~ _,--.  ~~~~ __,---.  ~~|
+ | | \___ ~~ /      ( )   "          "   `-.,' (') \~~ ~ (  / _\ \~~ |
+ |  \    \__/_   __(( _)_      (    "   "     (_\_) \___~ `-.___,'  ~|
+ |~~ \     (  )_(__)_|( ))  "   ))          "   |    "  \ ~~ ~~~ _ ~~|
+ |  ~ \__ (( _( (  ))  ) _)    ((     \\//    " |   "    \_____,' | ~|
+ |~~ ~   \  ( ))(_)(_)_)|  "    ))    //\\ " __,---._  "  "   "  /~~~|
+ |    ~~~ |(_ _)| | |   |   "  (   "      ,-'~~~ ~~~ `-.   ___  /~ ~ |
+ | ~~     |  |  |   |   _,--- ,--. _  "  (~~  ~~~~  ~~~ ) /___\ \~~ ~|
+ |  ~ ~~ /   |      _,----._,'`--'\.`-._  `._~~_~__~_,-'  |H__|  \ ~~|
+ |~~    / "     _,-' / `\ ,' / _'  \`.---.._          __        " \~ |
+ | ~~~ / /   .-' , / ' _,'_  -  _ '- _`._ `.`-._    _/- `--.   " " \~|
+ |  ~ / / _-- `---,~.-' __   --  _,---.  `-._   _,-'- / ` \ \_   " |~|
+ | ~ | | -- _    /~/  `-_- _  _,' '  \ \_`-._,-'  / --   \  - \_   / |
+ |~~ | \ -      /~~| "     ,-'_ /-  `_ ._`._`-...._____...._,--'  /~~|
+ | ~~\  \_ /   /~~/    ___  `---  ---  - - ' ,--.     ___        |~ ~|
+ |~   \      ,'~~|  " (o o)   "         " " |~~~ \_,-' ~ `.     ,'~~ |
+ | ~~ ~|__,-'~~~~~\    \"/      "  "   "    /~ ~~   O ~ ~~`-.__/~ ~~~|
+ |~~~ ~~~  ~~~~~~~~`.______________________/ ~~~    |   ~~~ ~~ ~ ~~~~|
+ |____~jrei~__~_______~~_~____~~_____~~___~_~~___~\_|_/ ~_____~___~__|
+ / \----- ----- ------------  ------- ----- -------  --------  -------\
+ \_/__________________________________________________________________/
+''')
+print('''
+ {}           {}
+   \  _---_  /
+    \/     \/
+     |() ()|
+      \ + /
+     / HHH  \
+    /  \_/   \
+  {}          {}
+             ''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+
+#Write your code below this line
+question1 = input(
+    "You enter a cave, at the end of the cave there are 2 passageways.\nDo you go left or right? ").lower()
+if question1 == "right":
+    print("You have fallen into a hole.\nGAME OVER")
+if question1 == "left":
+        question2 = input(
+        "You go down the tunnel to the left and wind your way down to a small Cave Lake.\nTo the left there is another passage way.\nDo you Swim or wait to go through the passage way? swim or wait? "
+    ).lower()
+if question2 == "swim":
+    print("You have been attacked by pirhanas.\nGAME OVER")
+elif question2 == "wait":
+    question3 = input("You choose to wait and go down the cavern.\nYou discover 3 doors. A red one, a blue one & a yellow one.\nWhich door do you want to go through? red, blue or yellow?").lower()
+if question3 == "red":
+    print("You have been burned by hellfire.\nGMAE OVER")
+elif question3 == "yellow":
+    print("You open the yellow door to a cavern filled top to bottom with gold, diamonds and treasure galore!\nYOU WIN! ENJOY YOUR PLUNDER!")
+elif question3 == "blue":
+    print("You open the door to a snarling beast!\nYou have been eaten by the beast!\nGAME OVER")
+else:
+    print("The doors have driven you to indecision.\This indecision has lead to Madness and you are LOST to the CAVE.\nGAME OVER")
+```
